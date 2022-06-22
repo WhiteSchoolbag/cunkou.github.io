@@ -1,0 +1,260 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Bootstrap Example</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js" -->
+    <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"> </script>
+		
+ 
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+ <!-- CSS -->
+<link href="https://unpkg.com/smartwizard@5/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
+
+<!-- JavaScript -->
+<script src="https://unpkg.com/smartwizard@5/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
+	
+		
+		<style>
+			
+			
+			#a1 {
+color: white;
+background: brown;
+font-size: 20px;
+}
+#a2 {
+color: white;
+background: gray;
+font-size: 20px;
+}
+#a3 {
+color: white;
+background: aqua;
+font-size: 20px;
+}
+			
+			.col{
+	background: #d4e3ea;
+    padding: 10px;
+	border: 1px solid #ccc;
+}
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+	content: ">";
+}
+
+		</style>
+		
+</head>
+
+<body>
+ 
+ 
+
+<div class="bs-example">
+	<nav class="navbar navbar-expand-md navbar-dark    " style="background-color: #4f9eff;">
+		<a href="#" class="navbar-brand">
+			<img src="Demo-logo.png" height="28" alt="CoolBrand">
+		</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<div class="navbar-nav">
+				<a href="#" class="nav-item nav-link active">Home</a>
+				<a href="#" class="nav-item nav-link">About</a>
+				<a href="#" class="nav-item nav-link">Products</a>
+			</div>
+			<form class="form-inline ml-auto">
+				<input type="text" class="form-control mr-sm-2" placeholder="Search">
+				<button type="submit" class="btn btn-outline-light">Search</button>
+			</form>
+		</div>
+	</nav>
+</div>
+
+
+<div class="container-fluid">
+<div> 快速设置</div>
+	<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">			
+			<div class="col">col</div>
+		<div class="col">col</div>
+		<div class="col">col</div>
+		<div class="col">col</div>	
+        <div class="col">col</div>
+	 </div>
+</div>
+<div class="container-fluid">
+      <div id="smartwizard">
+        <ul class="nav">
+           <li>
+               <a class="nav-link" href="#step-1">
+                  Step 1
+               </a>
+           </li>
+           <li>
+               <a class="nav-link" href="#step-2">
+                  Step 2
+               </a>
+           </li>
+           <li>
+               <a class="nav-link" href="#step-3">
+                  Step 3
+               </a>
+           </li>
+           <li>
+               <a class="nav-link" href="#step-4">
+                  Step 4
+               </a>
+           </li>
+        </ul>
+     
+        <div class="tab-content">
+           <div id="step-1" class="tab-pane" role="tabpanel">
+          <form class="form-horizontal" role="form">
+ 	<div class="form-group row">
+		<label for="firstname" class="col-sm-2 control-label">名字</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" id="firstname" 
+				   placeholder="请输入名字">
+		</div>
+	</div>
+</form>
+
+           </div>
+           <div id="step-2" class="tab-pane" role="tabpanel">
+          <form class="form-inline" role="form">
+  <div class="form-group  ">
+    <label class="sr-only" for="name">名称</label>
+    <input type="text" class="form-control" id="name" placeholder="请输入名称">
+  </div>
+  <div class="form-group">
+    <label  for="inputfile">文件输入</label>
+    <input type="file" id="inputfile">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox">请打勾
+    </label>
+  </div>
+ 
+</form>
+
+           </div>
+           <div id="step-3" class="tab-pane" role="tabpanel">
+                	<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+           </div>
+           <div id="step-4" class="tab-pane" role="tabpanel">
+                     <form class="form-inline" role="form">
+  <div class="form-group  ">
+    <label class="sr-only" for="name">名称</label>
+    <input type="text" class="form-control" id="name" placeholder="请输入名称">
+  </div>
+ 
+  <div class="checkbox">
+    <label>
+      <input type="checkbox">请打勾
+    </label>
+  </div>
+ 
+</form>
+
+           </div>
+        </div>
+    </div>
+ </div>
+</body>
+<script type="text/javascript">
+     $(document).ready(function(){
+     
+      // SmartWizard initialize
+      $('#smartwizard').smartWizard();
+     
+    });
+    
+    
+   $('#smartwizard').smartWizard({
+      selected: 0, // Initial selected step, 0 = first step
+      theme: 'progress', // arrows dots progress theme for the wizard, related css need to include for other than default theme
+      justified: true, // Nav menu justification. true/false
+      darkMode:false, // Enable/disable Dark Mode if the theme supports. true/false
+      autoAdjustHeight: true, // Automatically adjust content height
+      cycleSteps: false, // Allows to cycle the navigation of steps
+      backButtonSupport: false, // Enable the back button support
+      enableURLhash: true, // Enable selection of the step based on url hash
+      transition: {
+		  animation: 'fade', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
+          speed: '400', // Transion animation speed
+          easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+      },
+      toolbarSettings: {
+          toolbarPosition: 'bottom', // none, top, bottom, both
+          toolbarButtonPosition: 'right', // left, right, center
+          showNextButton: true, // show/hide a Next button
+          showPreviousButton: true, // show/hide a Previous button
+          toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+      },
+      anchorSettings: {
+          anchorClickable: true, // Enable/Disable anchor navigation
+          enableAllAnchors: false, // Activates all anchors clickable all times
+          markDoneStep: true, // Add done state on navigation
+          markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+          removeDoneStepOnNavigateBack: false, // While navigate back done step after active step will be cleared
+          enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+      },
+      keyboardSettings: {
+          keyNavigation: true, // Enable/Disable keyboard navigation(left and right keys are used if enabled)
+          keyLeft: [37], // Left key code
+          keyRight: [39] // Right key code
+      },
+      lang: { // Language variables for button
+          next: 'Next',
+          previous: 'Previous'
+      },
+      disabledSteps: [], // Array Steps disabled
+      errorSteps: [], // Highlight step with errors
+      hiddenSteps: [] // Hidden steps
+    });
+</script>
+</html>
+

@@ -1,0 +1,134 @@
+.container {
+    /* background-color: rgb(228, 192, 186); */
+}
+
+@media screen and (max-width:767px)
+ {
+    html{
+        font-size: 8px;
+    }
+    
+}
+@media screen and (min-width:768px){
+   
+    html{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width:990px){
+    html{
+        font-size: 16px;
+    }
+    
+}
+
+
+
+
+nav form{
+    width: 100%;
+}
+
+.nav {
+    background-color: aquamarine;
+    height: 5rem;
+
+}
+
+.nav .col-2 {
+    height: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    
+
+    background-color: rgba(222, 215, 229, 0.688);
+}
+
+
+
+
+.head .row {
+    height: 20%;
+    width: 100%;
+
+}
+
+.head .logo {
+  
+width: 300px;
+    height: 96px;
+    background-image: url(/img/logo_20220505_uugai.com_1651745037188.png);
+    background-size: 100% 100%;
+}
+
+
+.head .search {
+    background-color: wheat;
+    height: 6rem;
+}
+
+#navbarCollapse div a{
+    text-align: center;
+   
+
+    font-size:1.2rem;
+    color: black;
+
+
+}
+#navbarCollapse div a:hover{
+    text-align: center;
+    font-weight: 700;
+    font-size:1.5rem;
+    color: black;
+
+
+}
+
+
+
+
+
+
+
+.slider {
+    height: 35rem;
+    background-color: rgba(133, 235, 239, 0.738);
+}
+
+
+.content {}
+
+.content .page {}
+
+.content .page img {
+
+    width: 100%;
+    height: 84%;
+    background-color: rgb(35, 220, 214);
+}
+
+.content .page p {
+
+    text-align: center;
+    font-size: larger;
+    width: 100%;
+    height: 16%;
+
+}
+
+.footer {
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(132, 171, 207);
+}
+
+.footer .link {
+    background-color: cadetblue;
+}
+
+.footer .link p {
+    font-size: larger;
+    text-align: center;
+}
